@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.NODE_ENV==="production" ? process.env.PUBLIC_URL : ""}>
+    <BrowserRouter basename={"/web-tools"}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
