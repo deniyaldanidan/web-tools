@@ -2,7 +2,7 @@
   "name": "web-tools",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://deniyaldanidan.github.io/web-tools",
+  "homepage": "http://deniyaldanidan.github.io/web-tools/",
   "dependencies": {
     "@types/node": "^16.18.24",
     "@types/react": "^18.0.38",
