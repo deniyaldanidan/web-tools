@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/web-tools/static/css/main.7dbc3190.css",
-    "main.js": "/web-tools/static/js/main.89a0d404.js",
-    "static/js/787.19e9875d.chunk.js": "/web-tools/static/js/787.19e9875d.chunk.js",
-    "index.html": "/web-tools/index.html",
-    "main.7dbc3190.css.map": "/web-tools/static/css/main.7dbc3190.css.map",
-    "main.89a0d404.js.map": "/web-tools/static/js/main.89a0d404.js.map",
-    "787.19e9875d.chunk.js.map": "/web-tools/static/js/787.19e9875d.chunk.js.map"
+    "main.css": "http://deniyaldanidan.github.io/web-tools/static/css/main.7dbc3190.css",
+    "main.js": "http://deniyaldanidan.github.io/web-tools/static/js/main.9fbb81aa.js",
+    "static/js/787.19e9875d.chunk.js": "http://deniyaldanidan.github.io/web-tools/static/js/787.19e9875d.chunk.js",
+    "index.html": "http://deniyaldanidan.github.io/web-tools/index.html",
+    "main.7dbc3190.css.map": "http://deniyaldanidan.github.io/web-tools/static/css/main.7dbc3190.css.map",
+    "main.9fbb81aa.js.map": "http://deniyaldanidan.github.io/web-tools/static/js/main.9fbb81aa.js.map",
+    "787.19e9875d.chunk.js.map": "http://deniyaldanidan.github.io/web-tools/static/js/787.19e9875d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7dbc3190.css",
-    "static/js/main.89a0d404.js"
+    "static/js/main.9fbb81aa.js"
   ]
 }
