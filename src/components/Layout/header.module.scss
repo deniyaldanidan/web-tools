@@ -1,0 +1,33 @@
+@use '../../styles/vars';
+
+@keyframes widthAnimate {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: vars.$darkened-blue;
+    color: vars.$gray-white;
+    padding: 20px vars.$side-gap;
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .mobileBtn {
+        font-size: 1.25rem;
+        line-height: 1.3rem;
+        font-weight: 500;
+    }
+
+}
+

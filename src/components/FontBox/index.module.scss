@@ -1,0 +1,150 @@
+@use '../../styles/vars';
+
+.fontBox{
+    border: 1px solid vars.$darkened-blue;
+    width: 100%;
+    border-radius: 30px;
+
+    .topRow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        background-color: vars.$grayed-blue;
+        padding: 20px;
+        border-radius: 30px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        .inpGrp{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            
+            .label{
+                font-size: 1.25rem;
+                font-weight: 500;
+            }   
+        }
+
+        .checkGrp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            .label{
+                font-size: 1.25rem;
+                font-weight: 500;
+            }
+
+            .checkBox{
+                display: block;
+                width: 15px;
+                height: 15px;
+                background-color: vars.$gray-white;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: all 250ms ease-in-out;
+
+                &.checked{
+                    background-color: vars.$leaf-green;
+                }
+            }
+        }
+
+        .colorGrp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 15px;
+            flex-direction: column;
+
+            .label{
+                font-size: 1.25rem;
+                font-weight: 500;
+            }
+        }
+
+        .alignIcons{
+            background-color: vars.$darkened-blue;
+            padding: 10px 20px;
+            color: vars.$gray-white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            border-radius: 10px;
+
+            label{
+                font-size: 1.25rem;
+                line-height: 1.35rem;
+                font-weight: 500;
+            }
+
+            .iconBtn{
+                font-size: 2rem;
+                cursor: pointer;
+                line-height: 2.2rem;
+                transition: 250ms ease-in-out;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        
+        // @media (max-width:){
+
+        // }
+
+        }
+    }
+
+    .midRow{
+        display: block;
+        width: 100%;
+        background-color: vars.$grayed-blue;
+        padding: 20px 30px;
+
+        textarea{
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+            min-width: 200px;
+            height: 10ch;
+            background-color: vars.$gray-white;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            padding: 15px 10px;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 380px){
+            padding: 20px 15px;
+
+            textarea{
+                width: 100%;
+            }
+        }
+    }
+
+    .bottomRow{
+        padding: 20px;
+        width: 100%;
+        min-height: 100px;
+        height: fit-content;
+        max-height: 65vh;
+        overflow: scroll;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+}

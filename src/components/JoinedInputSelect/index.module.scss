@@ -1,0 +1,112 @@
+@use '../../styles/vars';
+
+.dblSelectWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+
+    input {
+        min-width: 20ch;
+        width: fit-content;
+        max-width: 30ch;
+        height: calc(10px + 1.2rem + 4px);
+        padding: 5px 10px;
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        outline: none;
+        border: none;
+        background-color: vars.$gray-white;
+        border-right: solid 1px vars.$darkened-blue;
+        border-top: solid 2px transparent;
+        border-bottom: solid 2px transparent;
+    }
+
+    .smallSelect {
+        position: relative;
+
+        .selectValue {
+            min-width: 7ch;
+            width: fit-content;
+            height: calc(10px + 1.2rem + 4px);
+            max-width: 15ch;
+            padding: 5px 13px 5px 10px;
+            font-size: 1.1rem;
+            line-height: 1.2rem;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            outline: none;
+            border: none;
+            background-color: vars.$gray-white;
+            border-left: solid 1px vars.$darkened-blue;
+            border-top: solid 2px transparent;
+            border-bottom: solid 2px transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            column-gap: 20px;
+
+            .arrow{
+                width: 8px;
+                height: 8px;
+                border-left: solid 2px vars.$black-n-blue;
+                border-bottom: solid 2px vars.$black-n-blue;
+                transform: rotate(-45deg);
+                transition: 250ms ease-in;
+
+                &.active{
+                    transform: rotate(135deg);
+                }
+            }
+        }
+
+        .drpDwn {
+            position: absolute;
+            background-color: vars.$blueish-white;
+            top: calc(100% + 2px);
+            left: 50%;
+            width: 80%;
+            border-radius: 5px;
+            max-height: 200px;
+            height: fit-content;
+            overflow-y: scroll;
+            z-index: 10;
+
+            &::-webkit-scrollbar{
+                display: none;
+            }
+
+            div{
+                padding: 5px 6px;
+                cursor: pointer;
+                transition: 150 ease-in-out;
+
+                &:hover{
+                    background-color: vars.$darkened-blue;
+                    color: vars.$blueish-white;
+                }
+            }
+
+
+        }
+    }
+
+    @media (max-width: 426px){
+
+        input{
+            min-width: 15ch;
+            max-width: 20ch;
+        }
+    }
+
+    @media (max-width:340px){
+
+        input{
+            min-width: 15ch;
+            max-width: 12ch;
+        }
+    }
+}
