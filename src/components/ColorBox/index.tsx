@@ -26,9 +26,9 @@ const ColorBox = ({width, height, onDelete}:props)=>{
     return (
         <div className={styles.colorBox} style={{width:`${width}vw`}}>
             <div className={styles.top}>
-                <AiOutlineClose onClick={onDelete} />
+                <AiOutlineClose onClick={onDelete} className={styles.iconBtn} />
                 <div className={styles.boxColorLabel}>{color}</div>
-                <BiCopy onClick={copyFn} className={styles.copyBtn}/> 
+                <BiCopy onClick={copyFn} className={styles.iconBtn}/> 
                 <ColorBtn color={color} setColor={setColor} />
             </div>
             <div className={styles.bottom} style={{backgroundColor:color, height}}></div>
