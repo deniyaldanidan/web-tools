@@ -13,7 +13,7 @@ const Layout = () => {
             minHeight: "100vh"
         }}>
             <Header />
-            <main style={{ flexGrow: 1 }}>
+            <main style={{ flexGrow: 1, minHeight: "inherit" }}>
                 <Outlet />
             </main>
             <Footer />

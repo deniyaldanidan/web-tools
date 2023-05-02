@@ -8,17 +8,13 @@ import JoinedInputSelect from '../JoinedInputSelect';
 import { AiOutlineAlignLeft, AiOutlineAlignRight, AiOutlineAlignCenter, } from 'react-icons/ai';
 import { BsJustify } from 'react-icons/bs';
 
-type props = {
-    boxId: string
-}
-
 const units = ["px", "rem"] as const;
 type unitsType = (typeof units)[number];
 type textAlign = "left" | "right" | "center" | "justify";
 
 type FontFamilies = "Sora" | "Hahmlet" | "Epilogue" | "Eczar" | "Lora" | "Raleway" | "Lato" | "Poppins" | "Nunito" | "Prompt";
 
-const FontBox = (props: props) => {
+const FontBox = () => {
     const [text, setText] = useState<string>("Roses are red, Violets are blue");
     const [chosenFontFamily, setChosenFontFamily] = useState<FontFamilies>(Object.keys(fontData)[0] as any);
     const [chosenWeight, setChosenWeight] = useState<number>(500);

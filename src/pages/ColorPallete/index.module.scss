@@ -1,0 +1,22 @@
+@use '../../styles/vars';
+
+.colorPallete{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 5px;
+    margin: 40px 5px;
+    // height: 90vh;
+
+
+    .addBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: vars.$grayed-blue;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+
+}

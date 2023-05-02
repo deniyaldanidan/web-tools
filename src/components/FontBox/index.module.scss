@@ -94,11 +94,16 @@
                 &:hover{
                     transform: scale(1.1);
                 }
+
+
             }
         
-        // @media (max-width:){
-
-        // }
+        @media (max-width:425px){
+            .iconBtn{
+                font-size: 1.5rem;
+                line-height: 1.6rem;
+            }
+        }
 
         }
     }

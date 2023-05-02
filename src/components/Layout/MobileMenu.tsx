@@ -5,7 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 import urlList from "./urlList";
 import { AnimatePresence, motion } from 'framer-motion';
-
+import {AiOutlineMenu} from 'react-icons/ai';
 
 const CloseIconBTN = motion(AiOutlineClose);
 
@@ -17,7 +17,7 @@ const MobileMenu = () => {
             <div
                 style={{ fontSize: "1.25rem", lineHeight: "1.3rem", fontWeight: 500 }}
                 onClick={() => setActive(true)}
-            >Menu</div>
+            ><AiOutlineMenu/></div>
             {
                 createPortal(
                     (

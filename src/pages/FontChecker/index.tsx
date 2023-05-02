@@ -31,11 +31,11 @@ const FontChecker = () => {
                             <div className={styles.fboxIntro}>
                                 <span className={styles.fboxLabel}>#{i + 1}</span>
                                 <span className={styles.deleteBtn} onClick={() => handleBoxDelete(boxId)}>
-                                    Delete #{i + 1}
+                                    {!isBelow550 ? `Delete #${i + 1}` : ""}
                                     <AiOutlineClose />
                                 </span>
                             </div>
-                            <FontBox boxId={boxId} />
+                            <FontBox />
                         </motion.div>))
                 }
             </AnimatePresence>

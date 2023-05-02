@@ -15,3 +15,17 @@ a{
 body{
   background-color: vars.$gray-white;
 }
+
+.info-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+  width: 100%;
+  min-height: inherit;
+
+  &.danger{
+    color: vars.$danger-red;
+  }
+}

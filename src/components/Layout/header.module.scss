@@ -29,5 +29,12 @@
         font-weight: 500;
     }
 
+    @media (max-width:425px){
+        padding: 10px vars.$side-gap*1.25;
+
+        .logo{
+            font-size: 1.25rem;
+        }
+    }
 }
 
